@@ -4,11 +4,11 @@ from time import time
 
 def main():
     tim=time()
-    print("En secuencial: ")
+    print("En secuencial: ", "\n")
     secuencial()
     print("Ha tardado: ", time()-tim, " segundos", "\n")
     timdos=time()
-    print("En multiprocesamiento: ")
+    print("En multiprocesamiento: ", "\n")
     multiprocesamiento()
     print("Ha tardado: ", time()-timdos, " segundos", "\n")
 
