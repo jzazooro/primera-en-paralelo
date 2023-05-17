@@ -1,15 +1,13 @@
-from ejercicio.multiproces import multiprocesamiento
-from ejercicio.secuencia import secuencial
+from procesos.secuencialmente import secuencial
+from procesos.multiprocesamiento import multiproceso
 from time import time
 
 def main():
-    tim=time()
+    sec=time()
     print("En secuencial: ", "\n")
     secuencial()
-    print("Ha tardado: ", time()-tim, " segundos", "\n")
-    timdos=time()
+    print("Ha tardado: ", time() - sec, " segundos", "\n")
+    mult=time()
     print("En multiprocesamiento: ", "\n")
-    multiprocesamiento()
-    print("Ha tardado: ", time()-timdos, " segundos", "\n")
-
-main()
+    multiproceso()
+    print("Ha tardado: ", time() - mult, " segundos", "\n")
